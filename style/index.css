@@ -47,3 +47,59 @@ table {
 body {
     background-color: #F4F4F4;
 }
+
+header h1 {
+    text-align: center;
+    padding: 12px;
+    margin: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+header .mainNav {  /* flexbox parent container */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+header .mainNav a {  /* flexbox children */
+    text-decoration: none;
+    padding: 7px 21px;
+    border: 2px solid black;
+}
+
+header .mainIntro {  /* flexbox parent container */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header .mainIntro h2 {  /* flexbox child */
+    text-align: center;
+    padding: 12px;
+    margin: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+header .mainIntro p {  /* flexbox child */
+    text-align: center;
+    padding: 6px 60px;
+    margin: 6px 60px 30px 60px;
+    border: 1px solid black;
+}
+
+.section1 .bannerImage {
+    width: 100%;
+    height: 250px;
+    padding: 12px 0px;
+    margin: 12px 0px;
+}
+
+.section1 .bannerImage img {
+    width: 100%;
+    height: 250px;
+}
