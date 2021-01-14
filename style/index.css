@@ -89,17 +89,141 @@ header .mainIntro p {  /* flexbox child */
     text-align: center;
     padding: 6px 60px;
     margin: 6px 60px 30px 60px;
-    border: 1px solid black;
 }
 
 .section1 .bannerImage {
     width: 100%;
     height: 250px;
-    padding: 12px 0px;
-    margin: 12px 0px;
+    padding: 12px 0px 0px 0px;
+    margin: 0px;
 }
 
 .section1 .bannerImage img {
     width: 100%;
     height: 250px;
+}
+
+.section2 .projectGallery {  /* flexbox parent container */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #FFD66B;
+}
+
+.section2 .projectGallery .projectContainer1 {  /* flexbox child */
+    height: 325px;
+    width: 120px;
+    border: 1px solid black;
+    background: url(https://picsum.photos/150);
+}
+
+.section2 .projectGallery .projectText1 a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 10px;
+    opacity: 0;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.section2 .projectGallery .projectContainer1:hover .projectText1 a {
+    color: #FFD66B;
+    opacity: 1;
+    text-shadow: 2px 2px black;
+    margin: 10px;
+    background-color: gray;
+    border: 1 solid black;
+}
+
+.section2 .projectGallery .projectContainer2 {  /* flexbox child */
+    height: 325px;
+    width: 120px;
+    border: 1px solid black;
+    background: url(https://picsum.photos/150);
+}
+
+.section2 .projectGallery .projectText2 a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 10px;
+    opacity: 0;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.section2 .projectGallery .projectContainer2:hover .projectText2 a {
+    color: #FFD66B;
+    opacity: 1;
+    text-shadow: 2px 2px black;
+    margin: 10px;
+    background-color: gray;
+    border: 1 solid black;
+}
+
+.section2 .projectGallery .projectContainer3 {  /* flexbox child */
+    height: 325px;
+    width: 120px;
+    border: 1px solid black;
+    background: url(https://picsum.photos/150);
+}
+
+.section2 .projectGallery .projectText3 a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 10px;
+    opacity: 0;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.section2 .projectGallery .projectContainer3:hover .projectText3 a {
+    color: #FFD66B;
+    opacity: 1;
+    text-shadow: 2px 2px black;
+    margin: 10px;
+    background-color: gray;
+    border: 1 solid black;
+}
+
+.section2 .projectGallery .projectContainer4 {  /* flexbox child */
+    height: 325px;
+    width: 120px;
+    border: 1px solid black;
+    background: url(https://picsum.photos/150);
+}
+
+.section2 .projectGallery .projectText4 a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 10px;
+    opacity: 0;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.section2 .projectGallery .projectContainer4:hover .projectText4 a {
+    color: #FFD66B;
+    opacity: 1;
+    text-shadow: 2px 2px black;
+    margin: 10px;
+    background-color: gray;
+    border: 1 solid black;
+}
+
+.section2 .projectGallery p {  /* flexbox child */
+    text-align: center;
+    height: 175px;
+    width: 175px;
+    padding: 15px;
+}
+
+.section2 .projectGallery button {  /* flexbox child */
+    height: 40px;
+    width: 80px;
 }
