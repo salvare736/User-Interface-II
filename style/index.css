@@ -67,6 +67,15 @@ header .mainNav a {  /* flexbox children */
     text-decoration: none;
     padding: 7px 21px;
     border: 2px solid black;
+    font-weight: bold;
+    color: #553042;
+    background-color: #FF9D72;
+    transition: .3s;
+}
+
+header .mainNav a:hover {
+    color: black;
+    background-color: #F4F4F4;
 }
 
 header .mainIntro {  /* flexbox parent container */
@@ -74,12 +83,14 @@ header .mainIntro {  /* flexbox parent container */
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    height: 125px;
+    padding-top: 5px;
 }
 
 header .mainIntro h2 {  /* flexbox child */
     text-align: center;
     padding: 12px;
-    margin: 12px;
+    margin: 12px 12px 0px 12px;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.6rem;
@@ -109,6 +120,7 @@ header .mainIntro p {  /* flexbox child */
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+    height: 350px;
     background-color: #FFD66B;
 }
 
@@ -226,4 +238,36 @@ header .mainIntro p {  /* flexbox child */
 .section2 .projectGallery button {  /* flexbox child */
     height: 40px;
     width: 80px;
+    font-weight: bold;
+}
+
+footer {  /* flexbox parent container */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 15px 30px;
+    background-color: #654062;
+}
+
+footer button {  /* flexbox child */
+    font-weight: bold;
+    margin: 0px 20px;
+}
+
+footer a {  /* flexbox child */
+    text-decoration: none;
+    padding: 10px;
+    margin: 0px 20px;
+    border: 1px solid black;
+    font-weight: bold;
+    color: black;
+    background-color: #F4F4F4;
+    transition: .3s;
+}
+
+footer a:hover {
+    color: #553042;
+    background-color: #FF9D72;
 }
