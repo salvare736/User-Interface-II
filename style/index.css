@@ -107,6 +107,7 @@ header .mainIntro p {  /* flexbox child */
     height: 250px;
     width: 100%;
     background: url("../images/banner.jpg");
+    background-size: 100% 100%;
     padding-top: 9px;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
