@@ -280,3 +280,37 @@ footer a:hover {
     color: #553042;
     background-color: #FF9D72;
 }
+
+@media (max-width: 800px) {  /* At 800px And below do the following: */
+    header h1 {
+        font-size: 1.4rem;
+        margin: 0px;
+    }
+    
+    header .mainNav {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    header .mainNav a {
+        width: 55px;
+    }
+
+    header .mainIntro {
+        margin-top: 12px;
+    }
+
+    header .mainIntro h2 {
+        font-size: 1.4rem;
+    }
+    
+    header .mainIntro p {
+        font-size: 1.0rem;
+    }
+}
+
+@media (max-width: 500px) {  /* At 500px And below do the following: */
+    .class {
+      width:
+    }
+}
