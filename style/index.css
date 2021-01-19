@@ -113,14 +113,21 @@ header .mainIntro p {  /* flexbox child */
     border-bottom: 1px solid gray;
 }
 
-.section2 .projectGallery {  /* flexbox parent container */
+.section2 {  /* flexbox parent master container */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD66B;
+}
+
+.section2 .projectGallery {  /* flexbox parent sub container */
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
     height: 350px;
-    background-color: #FFD66B;
     border-bottom: 1px solid gray;
 }
 
@@ -128,6 +135,7 @@ header .mainIntro p {  /* flexbox child */
     height: 325px;
     width: 120px;
     border: 1px solid black;
+    margin: 10px 20px;
     background: url("../images/gallery1.jpg");
     background-position: center;
     background-size: auto;
@@ -156,6 +164,7 @@ header .mainIntro p {  /* flexbox child */
     height: 325px;
     width: 120px;
     border: 1px solid black;
+    margin: 10px 20px;
     background: url("../images/gallery2.jpg");
     background-position: center;
     background-size: auto;
@@ -184,6 +193,7 @@ header .mainIntro p {  /* flexbox child */
     height: 325px;
     width: 120px;
     border: 1px solid black;
+    margin: 10px 20px;
     background: url("../images/gallery3.jpg");
     background-position: center;
     background-size: auto;
@@ -212,6 +222,7 @@ header .mainIntro p {  /* flexbox child */
     height: 325px;
     width: 120px;
     border: 1px solid black;
+    margin: 10px 20px;
     background: url("../images/gallery4.jpg");
     background-position: center;
     background-size: auto;
@@ -236,7 +247,14 @@ header .mainIntro p {  /* flexbox child */
     border: 1 solid black;
 }
 
-.section2 .projectGallery p {  /* flexbox child */
+.section2 .galleryFluff {  /* flexbox parent sub container */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 .galleryFluff p {  /* flexbox child */
     text-align: center;
     height: 175px;
     width: 175px;
@@ -244,7 +262,7 @@ header .mainIntro p {  /* flexbox child */
     font-size: 1.1rem;
 }
 
-.section2 .projectGallery button {  /* flexbox child */
+.section2 .galleryFluff button {  /* flexbox child */
     padding: 10px;
     font-weight: bold;
 }
@@ -307,10 +325,41 @@ footer a:hover {
     header .mainIntro p {
         font-size: 1.0rem;
     }
-}
 
-@media (max-width: 500px) {  /* At 500px And below do the following: */
-    .class {
-      width:
+    .section2 {
+        flex-flow: column wrap;
+    }
+
+    .section2 .projectGallery {
+        justify-content: center;
+        padding: 15px 0px;
+    }
+
+    .section2 .projectGallery .projectContainer1 {
+        margin: 10px 0px;
+    }
+
+    .section2 .projectGallery .projectContainer2 {
+        margin: 10px 0px;
+    }
+
+    .section2 .projectGallery .projectContainer3 {
+        margin: 10px 0px;
+    }
+
+    .section2 .projectGallery .projectContainer4 {
+        margin: 10px 0px;
+    }
+
+    .section2 .galleryFluff {
+        flex-flow: column nowrap;
+    }
+
+    .section2 .galleryFluff p {
+        padding-bottom: 0px;
+    }
+
+    .section2 .galleryFluff button {
+        margin-bottom: 20px;
     }
 }
