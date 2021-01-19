@@ -300,6 +300,7 @@ footer a:hover {
 }
 
 @media (max-width: 800px) {  /* At 800px And below do the following: */
+
     header h1 {
         font-size: 1.4rem;
         margin: 0px;
@@ -362,4 +363,50 @@ footer a:hover {
     .section2 .galleryFluff button {
         margin-bottom: 20px;
     }
+
+}
+
+@media (max-width: 500px) {  /* At 500px And below do the following: */
+
+    header .mainIntro {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    header .mainIntro h2 {
+        padding: 5px;
+        margin: 5px;
+        font-size: 1.2rem;
+    }
+
+    header .mainIntro p {
+        padding: 0px 10px;
+        margin: 0px;
+        font-size: 0.9rem;
+    }
+
+    .section2 .projectGallery {
+        flex-flow: row wrap;
+    }
+
+    .section2 .projectGallery .projectContainer1 {
+        height: 162px;
+        margin: 10px 15px;
+    }
+
+    .section2 .projectGallery .projectContainer2 {
+        height: 162px;
+        margin: 10px 15px;
+    }
+
+    .section2 .projectGallery .projectContainer3 {
+        height: 162px;
+        margin: 10px 15px;
+    }
+
+    .section2 .projectGallery .projectContainer4 {
+        height: 162px;
+        margin: 10px 15px;
+    }
+    
 }
